@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>IRC</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+  		#wrapper > .bg {
+  			position: absolute;
+  			top: 0;
+  			left: 0;
+  			width: 100%;
+  			height: 100%;
+  			background-color: #e3e3ff;
+  			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  			background-size: auto,								auto,														100% auto;
+  			background-position: center,								center,														top center;
+  			background-repeat: repeat,								no-repeat,													no-repeat;
+  			background-attachment: scroll,								scroll,														scroll;
+  			z-index: -1;
+  		}
+    </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html#main" class="logo" style="color:#000060; border-color:#000060;">Projects</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+						  <li class="active"><a href="IRC.html" style="color:#000060">Incident response Chart</a></li>
+							<li><a href="CluckCurtain.html">Cluck Curtain</a></li>
+							<li><a href="PropNLock.html">Prop-N-Lock</a></li>
+							<li><a href="PsyFi.html">PsyFi App Prototype</a></li>
+						</ul>
+						<ul class="icons">
+							<li>
+                  <a href="index.html">
+                      <img src="ce.png" alt="My Icon" width="60" height="60">
+                  </a>
+              </li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+              
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">December 2025</span>
+									<h1>Incident Response Chart</h1>
+								</header>
+								<p>This project was completed while working as a Solutions Engineer for <a href="https://echodataanalytics.com">Echo Data Analytics</a>. Echo creates dashboards for emergency response data for Fire and EMS Agencies. This allows the agencies to review response times, staffing levels, and incident volume trends & spikes.<br><br><b>*Note - due to the sensitive nature of the incident data and HIPAA regulations, all data in this portfolio is simulated.</b></p>
+								<div class="image main"><img src="images/IRCchart.png" alt="" /></div>
+								<header class="major">
+									<p style="font-weight: bold;">OBJECTIVE:</p><p>Create a way for Fire/EMS agencies to visualize the entire incident response. The solution should display relevant data whether the user is analyzing one or many incidents.</p>
+								</header>
+							</section>
+							<section class="post">
+								<div class="triangle-section">
+                    <div class="triangle-line"></div>
+                
+                    <div class="triangle-content">
+                        <h2>Previous Solution:</h2>
+                        <p>The previous graph which was used to display this information was effective only when sampling large amounts of data. When agencies were interested only in a single incident, only one dot of each color would appear, making it difficult to understand and interpret. It also required special logic with additional maintenance overhead.</p>
+        								<div class="image main"><img src="images/IRCold.png" alt=""></div>
+                      </div></div>
+      				  	<br><br>
+    				  	<div class="triangle-section">
+                  <div class="triangle-line"></div>
+                    <div class="triangle-content">
+                      <h2>New Solution:</h2>
+                      <div class="image main"><img src="images/IRCchart.png" alt=""></div>
+                      <p>In order to develop a new solution, I brainstormed potential ways in which the data could be displayed. I worked off of the idea that any numbers that were shown should be an average, since I believed that this would be the most effective way to make the chart scalable for sample size. I tested several graphs in order to find the clearest representation, and eventually decided to use a bar chart. I also handpicked the colors to ensure visibility and accessibility.
+                      <br><br>The solution was developed using SQL queries via Apache Superset (shown below), and then uploaded to the dashboard. In order to modify the chart’s colors, the dashboard’s JSON METADATA was also updated.</p>
+                      <div class="image main"><img src="images/IRCsql.png" alt=""></div>
+                      <div class="image main"><img src="images/IRCsuperset.png" alt=""></div>
+                      <p>I also created two other varieties of this chart in order to display slightly different data and allow for comparison of response times:</p>
+                      <div class="row">
+    										<div class="col-6 col-12-small">
+    											<div class="image main"><img src="images/IRCchart2.png" alt=""></div>
+    										</div>
+    										<div class="col-6 col-12-small">
+    											<div class="image main"><img src="images/IRCchart3.png" alt=""></div>
+    										</div></div></div></div>
+          </section>
+          <section class="post">
+            <div class="box">
+              <div style="text-align: center;">
+  						  <h2>Outcomes</h2>
+    						  <p>In the end, I was able to make a chart which functioned for any sample size of data and which required no data pre-processing. Throughout this project, I implemented the human-centered design method in order to determine which data and what charts would be most helpful to the clients. The skillset required combined direct data analysis, UI design, and data engineering.<br></p>
+  						  <div class="image main"><img src="images/IRCold.png" alt="">
+      					</div>
+  						  <p style="text-align:center; font-size:40pt;">↓</p>
+  						  <div class="image main"><img src="images/IRCchart.png" alt="">
+      				  </div>
+						  </div>
+						</div>
+						
+						<br>
+						<br>
+						
+						<div style="text-align: center;">
+						  <a href="PsyFi.html" class="button" style="margin-right: 2rem;">Last Project</a>
+						  <a href="index.html#main" class="button" style="margin-right: 2rem;">Home</a>
+						  <a href="CluckCurtain.html" class="button">Next Project</a>
+						</div>
+				  </section>
+
+        
+
+			</div>
+			<footer id="footer">
+						<section class="split contact">
+							<section>
+							<h2 style="color:#ffffff;">Contact:</h2>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p>(320) 493-6944</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p>charlotteserickson@gmail.com</p>
+							</section>
+							<section>
+								<h3>LinkedIn</h3>
+								<p><a href="https://www.linkedin.com/in/charlotte-erickson/" style="color:white;">www.linkedin.com/in/charlotte-erickson</a></p>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li style="color:#000060">&copy; CERICKSON</li><li style="color:#000060">Design: <a href="https://html5up.net" style="color:#000060">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
